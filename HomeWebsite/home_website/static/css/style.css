@@ -1,0 +1,462 @@
+.fancy-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fancy-form {
+  width: 400px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fancy-form select{
+  display: block;
+}
+
+.fancy-form h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #3498db;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif;
+}
+
+.input-container textarea {
+  height: 100px;
+}
+
+
+.button-container {
+  text-align: center;
+}
+
+.fancy-form button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.fancy-form button:hover {
+  background-color: #258cd1;
+}
+
+  
+
+
+
+  /* lOAN aPLLICATION */
+
+  .loan .title h1,h3{
+    text-align: center;
+  }
+  
+  .loan .title h1{
+    color:rgba(3, 1, 106);
+  }
+  
+  .loan .title h3{
+    margin-top: 25px;
+    color: white;
+    background-color: rgba(3, 1, 106);
+    width: 100%;
+    padding: 5px 5px;
+  }
+  
+  .loan .forms{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .loan .forms .loan_images img{
+    height: 20vh;
+    width: 20vh;
+    margin: 10px;
+    object-fit: cover;
+  }
+  
+  .loan .forms .loan_images{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  
+  
+  .loan .forms p{
+    margin-top: 20px;
+  }
+  
+  .loan .forms p label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .loan
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .loan .forms .loan_sub{
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(15, 161, 166, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .loan .forms h1{
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(15, 161, 166);
+    margin: 0 auto;
+  }
+  
+  .loan .forms h3{
+    color: white;
+    background-color: rgba(3, 1, 106);
+    padding: 5px 5px;
+    text-align: center;
+  }
+  
+  .loan .forms .my_loan{
+    background: #fff;
+   width: 200px;
+   margin: 15px 5px;
+   padding: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+   border-radius: 10px;
+  }
+  
+  .loan .forms .my_loan h4{
+    color: white;
+    background-color: rgba(3, 1, 106);
+    padding: 5px 5px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .loan .forms .spec_loan{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .loan .forms .my_loan p{
+    width: 100%;
+  }
+  
+  .loan .forms .my_loan p .title{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+
+
+
+
+
+   .fancy-heading {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    color: #3498db; /* Change the color to your desired color */
+    text-align: center;
+    padding: 20px 0; /* Add padding for spacing */
+    background-color: #f2f2f2; /* Add a background color */
+    border-bottom: 2px solid #3498db; /* Add a border at the bottom */
+    font-family: 'Arial', sans-serif; /* Choose a suitable font family */
+    letter-spacing: 2px; /* Add some letter spacing for emphasis */
+    text-transform: uppercase; /* Uppercase the text */
+}
+
+
+.fancy-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+.fancy-table th,
+.fancy-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
+}
+
+.fancy-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.fancy-table td {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.fancy-table tbody tr:nth-child(even) td {
+    background-color: #e5e5e5;
+}
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  flex: 1;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-list li a:hover {
+  color: #f39c12;
+}
+
+
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 20px;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .fancy-table th,
+  .fancy-table td {
+      font-size: 0.9rem; /* Adjust as needed */
+  }
+}
+
+
+
+
+
+
+
+.card {
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.card-content {
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card-action a {
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card-action a:hover {
+  color: #258cd1;
+}
+
+
+
+
+
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f39c12;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #f39c12;
+}
+
+
+
+
+
+
+
+.login-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3498db;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  font-size: 1rem;
+}
+
+
+
+.input-field input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-login {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #258cd1;
+}
+
+
+.ll-g {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+}

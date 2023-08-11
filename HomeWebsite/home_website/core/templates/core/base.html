@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>Document</title>{% endblock %}
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Linkk to css file-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+</head>
+<body>
+
+
+  
+    <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="/" class="">Finances</a>
+        </div>
+          <ul id="nav-mobile" class="navbar-list">
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+            <li><a href="{% url 'timesheet:submit_timesheet' %}" class="collection-item">Timesheet</a></li>
+            <li><a href="{% url 'loan:loan_application' %}" class="collection-item">Loan</a></li>
+            
+            {% endif %}
+            <li><a href="{% url 'core:user_login' %}">Login</a></li>
+          </ul>
+    </nav>
+
+    
+        {% block content %}
+        {% endblock %}
+   
+            
+    
+        <footer class="footer">
+          <div class="container footer-content">
+              <div class="footer-logo">
+                  MyWebsite
+              </div>
+              <div class="footer-links">
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Contact</a>
+              </div>
+              <div class="footer-social">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </footer>
+
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+
+
+    
+
+  
+<div class="container">
+  <div class="row">
+      <div class="col s12 m6">
+          <div class="card hoverable">
+              <div class="card-image">
+                  <img src="https://media.istockphoto.com/id/504538444/photo/time-sheet-on-a-digital-tablet.jpg?s=170667a&w=0&k=20&c=6r93IsNH64XaGkktl4oXkyyO7dUghj0tiYtC_4B-P9M=">
+                  <span class="card-title">Timesheet</span>
+              </div>
+              <div class="card-content">
+                  <p>This is a fancy card that links to another page.</p>
+              </div>
+              <div class="card-action">
+                  <a href="{% url 'timesheet:submit_timesheet' %}">Timesheet</a>
+              </div>
+          </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img src="https://wallpaperaccess.com/full/4105987.jpg">
+                <span class="card-title">Loan</span>
+            </div>
+            <div class="card-content">
+                <p>This is a fancy card that links to another page.</p>
+            </div>
+            <div class="card-action">
+                <a href="{% url 'loan:loan_application' %}">Loan</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+
+
+
+{% endblock %}

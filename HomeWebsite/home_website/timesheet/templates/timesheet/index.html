@@ -1,0 +1,264 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+
+<h4 class="center-align fancy-heading">TIMESHEET</h4>
+
+
+<div class="table-container">
+<table class="striped highlight responsive-table fancy-table">
+  <thead>
+    <tr>
+        <th></th>
+        <th>Morning</th>
+        <th>Afternoon</th>
+        <th>Evening</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <strong><td>Sunday</td></strong>
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Sunday' and book.day_time == 'Morning' %}
+        <i class="material-icons">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+      
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Sunday' and book.day_time == 'Afternoon' %}
+        <i class="material-icons">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Sunday' and book.day_time == 'Evening' %}
+        <i class="material-icons">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <strong><td>Monday</td></strong>
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Monday' and book.day_time == 'Morning' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Monday' and book.day_time == 'Afternoon' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Monday' and book.day_time == 'Evening' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <strong><td>Tuesday</td></strong>
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Tuesday' and book.day_time == 'Morning' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Tuesday' and book.day_time == 'Afternoon' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Tuesday' and book.day_time == 'Evening' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <strong><td>Wednesday</td></strong>
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Wednesday' and book.day_time == 'Morning' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Wednesday' and book.day_time == 'Afternoon' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Wednesday' and book.day_time == 'Evening' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <strong><td>Thursday</td></strong>
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Thursday' and book.day_time == 'Morning' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Thursday' and book.day_time == 'Afternoon' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Thursday' and book.day_time == 'Evening' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <strong><td>Friday</td></strong>
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Friday' and book.day_time == 'Morning' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Friday' and book.day_time == 'Afternoon' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Friday' and book.day_time == 'Evening' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <strong><td>Saturday</td></strong>
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Saturday' and book.day_time == 'Morning' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Saturday' and book.day_time == 'Afternoon' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+
+      <td>
+        <ul>
+        {% for book in entries %}
+        {% if book.assigned_day == 'Saturday' and book.day_time == 'Evening' %}
+        <i class="material-icons green accent-3">check</i><li>{{ book.activity  }}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+    <div class='fancy-form-container'>
+    <form action=""  class="fancy-form" method="POST">
+      <h2>Submit</h2>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+
+
+    
+
+
+
+{% endblock %}
